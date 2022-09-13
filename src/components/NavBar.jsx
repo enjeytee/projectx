@@ -1,22 +1,23 @@
-import React from "react";
-import myLogo from "../images/my-logo.png";
+// import React from "react";
 
 export default function NavBar() {
     return (
         <div>
-            <image src={myLogo}/>
-            <ul className="nav-list">
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Suppliers</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">My Cart</a></li>
-                <li><a href="#">My Orders</a></li>
-                <li><a href="#">Product Comparisons</a></li>
-                <li><a href="#">Sample Requests</a></li>
-                <li><a href="#">My Transactions</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Help Center</a></li>
-            </ul>
+            <header>
+                    <a id="company-logo" href="https://www.interleukin.co/" target="_blank">interLeukin</a>
+                    <p className="header-text">
+                    <a target="_blank" href="#">Dashboard</a> |
+                    <a target="_blank" href="https://www.interleukin.co/supplier-community/"> Suppliers</a> |
+                    <a target="_blank" href="https://www.interleukin.co/marketplace/"> Products</a> |
+                    <a target="_blank" href="https://www.interleukin.co/buyer-community/"> My Cart</a> |
+                    <a target="_blank" href="https://www.interleukin.co/marketplace/"> My Orders</a> |
+                    <a target="_blank" href="https://www.interleukin.co/marketplace/"> Product Comparisons</a> |
+                    <a target="_blank" href="https://www.interleukin.co/marketplace/"> My Transactions</a> |
+                    <a target="_blank" href="https://www.interleukin.co/contact-us/"> Sample Requests</a> |
+                    <a target="_blank" href="https://www.interleukin.co/our-story/"> Profile</a> |
+                    <a target="_blank" href="https://www.interleukin.co/frequently-asked-questions/"> Help Center</a>
+                </p>
+            </header>
         </div>
     );
 };
