@@ -19,8 +19,8 @@ a {
 }
 
 a:hover {
-    color: rgb(111, 233, 227);
-    text-decoration: underline;
+    color: black;
+    text-decoration: none;
 }
 
 /* layout */

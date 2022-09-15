@@ -35,7 +35,43 @@ form td:last-child {
     display: flex;
     justify-content: space-evenly;
 }
-
+/* 
 form * {
-    font-size: 28px;
+    font-size: .6rem;
+} */
+
+@media(max-width: 400px){
+	.transactions-table thead{
+		display: none;
+	}
+
+	.transactions-table, 
+    .transactions-table tbody, 
+    .transactions-table tr, 
+    .transactions-table td{
+		display: block;
+		width: 100%;
+	}
+
+	.transactions-table tr{
+		margin-bottom: 1rem;
+	}
+
+	.transactions-table td{
+		text-align: right;
+		/* padding-left: 1%; */
+		text-align: right;
+		position: relative;
+	}
+
+	.transactions-table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left: .3rem;
+		font-size:.6rem;
+		font-weight: bold;
+		text-align: left;
+	}
 }

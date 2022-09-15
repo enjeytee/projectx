@@ -8,26 +8,25 @@ const Transactions = () => {
     const fillTable = () => {
         return transactions.map((transaction) => (
             <tr key={transaction.id}>
-                <td>{transaction.drNumber}</td>
-                <td>{transaction.status}</td>
-                <td>{transaction.supplier}</td>
-                <td>{transaction.poNumber}</td>
-                <td>{transaction.totalSkus}</td>
-                <td>{transaction.deliveredQuantity}</td>
-                <td>{transaction.acceptedQuantity}</td>
-                <td>{transaction.deliveredAmount}</td>
-                <td>{transaction.acceptedAmount}</td>
-                <td>{transaction.type}</td>
-                <td>{transaction.deliveryDate}</td>
-                <td>{transaction.eta}</td>
-                <td>{transaction.dateCreated}</td>
-                {/* <td>{transaction.actions}</td> */}
-            </tr>
+                <td data-label="DR NUMBER">{transaction.drNumber}</td>
+                <td data-label="STATUS">{transaction.status}</td>
+                <td data-label="SUPPLIER">{transaction.supplier}</td>
+                <td data-label="PO NUMBER">{transaction.poNumber}</td>
+                <td data-label="TOTAL SKUS">{transaction.totalSkus}</td>
+                <td data-label="DELIVERED QUANTITY">{transaction.deliveredQuantity}</td>
+                <td data-label="ACCEPTED QUANTITY">{transaction.acceptedQuantity}</td>
+                <td data-label="DELIVERED AMOUNT">{transaction.deliveredAmount}</td>
+                <td data-label="ACCEPTED AMOUNT">{transaction.acceptedAmount}</td>
+                <td data-label="TYPE">{transaction.type}</td>
+                <td data-label="DELIVERY DATA">{transaction.deliveryDate}</td>
+                <td data-label="ETA">{transaction.eta}</td>
+                <td data-label="DATE CREATED">{transaction.dateCreated}</td>
+        </tr>
         ));
     };
     return (
-        <div className="transaction-container">
-            <table>
+        <div className="transactions-container">
+            <table className="transactions-table">
                 <thead>
                     <tr>
                         <th>D.R. NUMBER</th>
@@ -43,11 +42,10 @@ const Transactions = () => {
                         <th>DELIVERY DATE</th>
                         <th>ETA</th>
                         <th>DATE CREATED</th>
-                        <th>ACTIONS</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {fillTable()}        
+                    {fillTable()}
                 </tbody>
             </table>
         </div>
