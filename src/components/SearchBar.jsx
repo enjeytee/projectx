@@ -1,10 +1,9 @@
-// import React from "react";
-
-export default function SearchBar() {
+const SearchBar = () => {
     return (
         <div className="container-search">
-            <input className="input-search" type="text" placeholder="Search transaction"/>
-            <a className="button-search">Search</a>
+            <input className="input-search" type="text" placeholder="Enter DR Number"/>
+            <button className="button-search">Search Transaction</button>
         </div>
     );
 };
+export default SearchBar;

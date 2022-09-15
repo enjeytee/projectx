@@ -1,10 +1,10 @@
-// import React from "react";
 import myLogo from "../images/my-logo.png";
 
-export default function Footer() {
+const Footer = () => {
     return (
         <footer className="footer">
             <a href="https://trajanonj-portfolio.netlify.app" target="_blank"><img className="my-logo" src={myLogo} width="85rem"/></a>
         </footer>
     );
 };
+export default Footer;
